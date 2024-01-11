@@ -1,70 +1,167 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Form 57B - Administrator Privilege Request</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Form 57B: Request for Administrator Privileges</h1>
 
     <form id="form57B">
-        <!-- Identification Section -->
-        <fieldset>
-            <legend>Identification</legend>
-            <label>Full Name: <input type="text" name="fullName"></label><br>
-            <label>Employee ID: <input type="text" name="employeeID"></label><br>
-            <label>Department: <input type="text" name="department"></label><br>
-            <label>Position Title: <input type="text" name="positionTitle"></label><br>
-            <label>Email: <input type="email" name="email"></label><br>
-            <label>Phone: <input type="tel" name="phone"></label><br>
-        </fieldset>
+      <!-- Identification Section -->
+      <fieldset>
+        <legend>Identification</legend>
+        <label>Full Name: <input type="text" name="fullName" /></label><br />
+        <label>Employee ID: <input type="text" name="employeeID" /></label
+        ><br />
+        <label>Department: <input type="text" name="department" /></label><br />
+        <label>Position Title: <input type="text" name="positionTitle" /></label
+        ><br />
+        <label>Email: <input type="email" name="email" /></label><br />
+        <label>Phone: <input type="tel" name="phone" /></label><br />
+      </fieldset>
 
-        <!-- Request Details -->
-        <fieldset>
-            <legend>Request Details</legend>
-            <label>Specific Privileges: <textarea name="specificPrivileges"></textarea></label><br>
-            <label>Justification: <textarea name="justification"></textarea></label><br>
-            <label>Duration: <input type="text" name="duration"></label><br>
-            <label>Supervisor's Endorsement: <input type="text" name="supervisorEndorsement"></label><br>
-        </fieldset>
+      <!-- Request Details -->
+      <fieldset>
+        <legend>Request Details</legend>
+        <label
+          >Specific Privileges:
+          <textarea name="specificPrivileges"></textarea></label
+        ><br />
+        <label>Justification: <textarea name="justification"></textarea></label
+        ><br />
+        <label>Duration: <input type="text" name="duration" /></label><br />
+        <label
+          >Supervisor's Endorsement:
+          <input type="text" name="supervisorEndorsement" /></label
+        ><br />
+      </fieldset>
 
-        <!-- Administrative Use Only -->
-        <fieldset>
-            <legend>Administrative Use Only</legend>
-            <!-- Placeholder for administrative inputs -->
-            <p>[Administrative fields here]</p>
-        </fieldset>
+      <!-- Administrative Use Only -->
+      <fieldset>
+        <legend>Administrative Use Only</legend>
 
-        <!-- Security Verification -->
-        <fieldset>
-            <legend>Security Verification</legend>
-            <!-- Placeholder for security questions -->
-            <p>[Security questions here]</p>
-        </fieldset>
+        <label
+          ><input type="checkbox" name="departmentHeadApproval" /> Department
+          Head Approval</label
+        ><br />
+        <label
+          ><input type="checkbox" name="itSecurityApproval" /> IT Security
+          Approval</label
+        ><br />
+        <label><input type="checkbox" name="hrApproval" /> HR Approval</label
+        ><br />
+        <label
+          >Department Head Comments:
+          <textarea name="departmentHeadComments"></textarea></label
+        ><br />
+        <label
+          >IT Security Comments:
+          <textarea name="itSecurityComments"></textarea></label
+        ><br />
+        <label>HR Comments: <textarea name="hrComments"></textarea></label
+        ><br />
+        <label
+          ><input type="checkbox" name="identityVerification" /> Identity
+          Verification Completed</label
+        ><br />
+        <label
+          ><input type="checkbox" name="securityClearance" /> Security Clearance
+          Verified</label
+        ><br />
+        <label
+          >Risk Assessment: <input type="text" name="riskAssessment" /></label
+        ><br />
+        <label
+          ><input type="checkbox" name="policyCompliance" /> Compliance with
+          Company Policies</label
+        ><br />
+        <label
+          >Follow-up Schedule:
+          <input type="date" name="followUpSchedule" /></label
+        ><br />
+        <label
+          >Final Approval Signature:
+          <input type="text" name="finalApprovalSignature" /></label
+        ><br />
+      </fieldset>
 
-        <!-- Redundant Information -->
-        <fieldset>
-            <legend>Redundant Information</legend>
-            <label>Repeat Full Name: <input type="text" name="repeatFullName"></label><br>
-            <label>Repeat Department: <input type="text" name="repeatDepartment"></label><br>
-            <!-- Other redundant fields -->
-        </fieldset>
+      <!-- Security Verification -->
+      <fieldset>
+        <legend>Security Verification</legend>
 
-        <!-- Miscellaneous Overcomplications -->
-        <fieldset>
-            <legend>Miscellaneous Overcomplications</legend>
-            <!-- Placeholder for overcomplications -->
-            <p>[Miscellaneous overcomplications here]</p>
-        </fieldset>
+        <label
+          >Duration of Employment:
+          <input type="text" name="employmentDuration" /></label
+        ><br />
+        <label
+          >Number of Critical Security Incidents:
+          <input type="number" name="securityIncidents" min="0" /></label
+        ><br />
+        <label
+          >Security Training Certifications:
+          <textarea name="securityTraining"></textarea></label
+        ><br />
+        <label
+          >Previous Security Roles:
+          <textarea name="previousSecurityRoles"></textarea></label
+        ><br />
+        <label
+          >Describe Most Recent Security Incident:
+          <textarea name="recentSecurityIncident"></textarea></label
+        ><br />
+        <label
+          ><input type="checkbox" name="confidentialityAgreement" /> I
+          acknowledge the Confidentiality Agreement.</label
+        ><br />
+        <label
+          >Last Security Policy Update Awareness:
+          <input type="date" name="lastSecurityUpdate" /></label
+        ><br />
+      </fieldset>
 
-        <!-- Final Submission -->
-        <fieldset>
-            <legend>Final Submission</legend>
-            <label><input type="checkbox" name="understanding" required> I understand the terms and conditions.</label><br>
-            <label><input type="checkbox" name="agreement" required> I agree to the processing of my data.</label><br>
-            <!-- Other final submission requirements -->
-        </fieldset>
+      <!-- Redundant Information -->
+      <fieldset>
+        <legend>Redundant Information</legend>
+        <label
+          >Repeat Full Name: <input type="text" name="repeatFullName" /></label
+        ><br />
+        <label
+          >Repeat Department:
+          <input type="text" name="repeatDepartment" /></label
+        ><br />
+        <!-- Other redundant fields -->
+      </fieldset>
 
-        <button type="submit">Submit Form 57B</button>
+      <!-- Miscellaneous Overcomplications -->
+      <fieldset>
+        <legend>Miscellaneous Overcomplications</legend>
+        <label
+          >Company Policy: Explain the Company Policy regarding the use of
+          Administrator Privileges
+          <input type="text" name="policyQuiz" /></label
+        ><br />
+        <label
+          >Essay on Importance of Role:
+          <textarea name="importanceEssay"></textarea></label
+        ><br />
+        <p>[Miscellaneous overcomplications here]</p>
+      </fieldset>
+
+      <!-- Final Submission -->
+      <fieldset>
+        <legend>Final Submission</legend>
+        <label
+          ><input type="checkbox" name="understanding" required /> I understand
+          the terms and conditions.</label
+        ><br />
+        <label
+          ><input type="checkbox" name="agreement" required /> I agree to the
+          processing of my data.</label
+        ><br />
+        <!-- Other final submission requirements -->
+      </fieldset>
+
+      <button type="submit">Submit Form 57B</button>
     </form>
-</body>
+  </body>
 </html>
